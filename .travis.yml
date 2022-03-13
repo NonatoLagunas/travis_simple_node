@@ -15,7 +15,7 @@ before_script:
 script:
         - docker --version # print the version for logging
         - docker build -t simple-travis-node .
-        - docker tag simple-node nonato07/simple-travis-node:latest
+        - docker tag simple-travis-node nonato07/simple-travis-node:latest
 
           #after_success:
           #- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
